@@ -8,7 +8,7 @@
 % Affiliation: 
 %
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 clear all; close all; clc;
@@ -17,8 +17,8 @@ clear all; close all; clc;
 % SSP585, 2100s, China
 
 %R = normrnd(MU,SIGMA,m,n);
-%iqloss = zeros(209,6,4);
 
+iqloss = zeros(4);
 
 load("/share/home/Pop/Data/2/SSP5_2100_child.mat");
 pop(pop ==0) = nan;
@@ -55,11 +55,7 @@ if isnan(IQ1)
 else
 
 xx2 = polyfit(d2,IQ1,1);
-%a = polyval(xx2,d2);
-%figure
-%plot(d2,IQ1,'o')
-%hold on
-%plot(d2,a)
+
 
 IQ1_lost=IQ1-(d2-d2_lost)*xx2(1);
 
@@ -75,6 +71,7 @@ iqloss(4) = A2;
 
 end
 end
+
 
 
 
