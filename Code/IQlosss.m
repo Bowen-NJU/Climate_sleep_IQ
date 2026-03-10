@@ -73,6 +73,8 @@ end
 end
 
 
+save('iqloss.mat', "iqloss_SSP_year_country");
+
 
 
 
