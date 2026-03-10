@@ -1,7 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title: 
+% 
+% Year:
+%
+% Author: 
+%
+% Affiliation: 
+%
+
+
+
+
 clear all; close all; clc;
 
 % Example code for estimating potential IQ loss related to sleep loss
-% SSP585, 2100s, ukesm1-0-ll (global climate model), China
+% SSP585, 2100s, China
 
 %R = normrnd(MU,SIGMA,m,n);
 %iqloss = zeros(209,6,4);
@@ -66,4 +79,5 @@ end
 
 
 
-%histogram(IQ1,"FACEALPHA",0.3)
+
+
